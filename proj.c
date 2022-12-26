@@ -750,7 +750,7 @@ char ch;
   while (b==1){
         system("cls");
         printf("\t\t\t\t\t\t     --------------\n");
-        printf("\t\t\t\t\t\t    |   Traspose   |\n");
+        printf("\t\t\t\t\t\t    |   Transpose   |\n");
         printf("\t\t\t\t\t\t     --------------\n");
         printf("\n >> Enter number of rows :: ");
         scanf("%d",&row);
@@ -772,7 +772,7 @@ char ch;
     {
         traspose[i][j]=arr[j][i];
     }
-        printf("\n\n The traspose  Matrix is :: \n");
+        printf("\n\n The transpose  Matrix is :: \n");
         printf(" --------------------------\n\n");
 
    for(i=0;i<col;i++)
