@@ -9,11 +9,11 @@ void sum_2matrics()
     int n = 1,i,j,x,y;
     while (n == 1) {
         system("cls");
-        printf("\n  please enter nomber of row :");
+        printf("\n  please enter number of row :");
         scanf("%d", &x);
-        printf("\n\n  please enter nomber of col :");
+        printf("\n\n  please enter number of col :");
         scanf("%d", &y);
-        printf("\n\n  please enter first matrices ::\n");
+        printf("\n\n  please enter the first matrix ::\n");
         printf("  ------------------------------\n\n");
     float array1[x][y],array2[x][y],sum_arr[x][y];
     for ( i = 0; i < x; i++)
@@ -23,7 +23,7 @@ void sum_2matrics()
         scanf("%f", &array1[i][j]);
       }
 
-        printf("\n\n  please enter socend matrices ::\n");
+        printf("\n\n  please enter the second matrix ::\n");
         printf("  -------------------------------\n\n");
 
    for ( i = 0; i < x; i++)
