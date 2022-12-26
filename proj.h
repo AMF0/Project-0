@@ -5,8 +5,6 @@
 #include <stdlib.h>
 #include <conio.h>
 
-
-
 void Home();
 void Math_operation();
 void characteristics_of_Matrix();
@@ -19,7 +17,7 @@ void add_more_2m();
 void muliply();
 void multiply_num_in_Matrix();
 void producting();
-void Transvers();
+void traspose();
 void determinant2_2();
 void determinant3_3();
 void invers ();
