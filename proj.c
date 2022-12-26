@@ -2,9 +2,6 @@
 
 
 #define MAX 50
-#define MAXIMUM 25
-
-
 
 void sum_2matrics()
 {
@@ -72,9 +69,9 @@ int n1=1,k;
                 system("cls");
 	            printf("\n You can add any number of matrices\n\n");
 int r,c,k;
-                printf("  please enter nomber of row :");
+                printf("  please enter number of row :");
                 scanf("%d",&r);
-                printf("\n  please enter nomber of col :");
+                printf("\n  please enter number of col :");
                 scanf("%d",&c);
 	            printf("\n\n");
 	            printf("  enter the matric \n  ----------------\n\n");
@@ -182,13 +179,13 @@ void Math_operation()
 	    printf("\n\t\t\t\t|  3-Multiplying   |\t\t\t|      8-Back        |  ");
 	    printf("\n\t\t\t\t ------------------\t\t\t --------------------");
 	    printf("\n\n\t\t\t\t ------------------");
-	    printf("\n\t\t\t\t|  4-Transverse    |\n");
+	    printf("\n\t\t\t\t|  4-Transpose      |\n");
 	    printf("\t\t\t\t ------------------\n");
 	    printf("\n\t\t\t\t ------------------");
 	    printf("\n\t\t\t\t|5-Determinant 2x2 |\n");
 	    printf("\t\t\t\t ------------------\n");
 	    while (b==1){
-	    printf("\n >> your chooce is :  ");
+	    printf("\n >> your choice is :  ");
 	    scanf("%d",&check);
 	    switch (check){
     case 1:
@@ -201,7 +198,7 @@ void Math_operation()
           producting();
     break;
     case 4:
-            Transvers();
+            traspose();
     break;
     case 5:
           determinant2_2();
@@ -335,9 +332,9 @@ void sub_2m()
     int n = 1,i,j,x,y;
     while (n == 1) {
         system("cls");
-        printf("\n  please enter nomber of row :");
+        printf("\n  please enter number of row :");
         scanf("%d", &x);
-        printf("\n\n  please enter nomber of col :");
+        printf("\n\n  please enter number of col :");
         scanf("%d", &y);
     float array1[x][y],array2[x][y],sub_arr[x][y];
         printf("\n\n  please enter first matrices ::\n");
@@ -350,7 +347,7 @@ void sub_2m()
         scanf("%f", &array1[i][j]);
       }
 
-        printf("\n\n  please enter socend matrices ::\n");
+        printf("\n\n  please enter second matrices ::\n");
         printf("  -------------------------------\n\n");
 
    for ( i = 0; i < x; i++)
@@ -398,8 +395,7 @@ void muliply()
           printf("\t\t\t\t\t\t     ----------------\n");
           printf("\n\n please choose from the following list :- \n\n\n\n");
           printf("\t\t\t\t\t\t   1-Multply 2 Matrices\n\n ");
-          printf("\t\t\t\t\t\t   2-Multply 3 Matrices\n\n ");
-          printf("\t\t\t\t\t\t   3-Back");
+          printf("\t\t\t\t\t\t   2-Back");
 
     while(j==1){
 
@@ -411,14 +407,8 @@ void muliply()
       case 1:
           mult_2mat();
           break;
+
       case 2:
-          {
-              printf("\n\n   >> we are sorry, this choose is not avalibel now  ^_^\n\n");
-              printf("   >> please choose anther ");
-              j=1;
-          }
-          break;
-      case 3:
           producting();
           break;
       default:
@@ -440,7 +430,7 @@ void mult_2mat()
         system("cls");
         printf("\n Matrix 1 :: \n");
         printf(" -----------\n\n");
-        printf(" Please enter the number of rows : ");  //receive the number of rows for first matrix
+        printf(" Please enter the number of rows    : ");  //receive the number of rows for first matrix
         scanf("%d", &r1);
         printf("\n Please enter the number of columns : ");  //receive the number of columns for first matrix
         scanf("%d", &c1);
@@ -753,14 +743,14 @@ char ch;
     if (n==0)
         producting();
 }
-void Transvers()
+void traspose()
 {
 char ch;
   int row,col,i,j,Q,b=1,v;
   while (b==1){
         system("cls");
         printf("\t\t\t\t\t\t     --------------\n");
-        printf("\t\t\t\t\t\t    |   Transvers  |\n");
+        printf("\t\t\t\t\t\t    |   Traspose   |\n");
         printf("\t\t\t\t\t\t     --------------\n");
         printf("\n >> Enter number of rows :: ");
         scanf("%d",&row);
@@ -768,7 +758,7 @@ char ch;
         scanf("%d",&col);
         printf("\n\n Enter the matric ::\n");
         printf(" -------------------\n");
-  float arr [row][col],transvers[col][row];
+  float arr [row][col],traspose[col][row];
 
    for(i=0;i<row;i++)
     for(j=0;j<col;j++)
@@ -780,16 +770,16 @@ char ch;
    for(i=0;i<col;i++)
     for(j=0;j<row;j++)
     {
-        transvers[i][j]=arr[j][i];
+        traspose[i][j]=arr[j][i];
     }
-        printf("\n\n The transvers Matrix is :: \n");
+        printf("\n\n The traspose  Matrix is :: \n");
         printf(" --------------------------\n\n");
 
    for(i=0;i<col;i++)
    {
     for(j=0;j<row;j++)
      {
-        printf("\t%0.2f",transvers[i][j]);
+        printf("\t%0.2f",traspose[i][j]);
      }
         printf("\n");
    }
